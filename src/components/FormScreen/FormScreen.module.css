@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg');
+    background-size: cover;
+    background-position: center;
+   filter: brightness(.4);
+    z-index: -1;
+  }
+  
+  .formheading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(234, 195, 20);
+    font-size: 60px;
+  }
+  
+  .formgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+  }
+  
+  .danger {
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .formgroup label {
+    margin-bottom: 5px;
+  }
+  
+  .formgroup input {
+    width: 300px; /* Ancho fijo para los inputs */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  
+  .button {
+    padding: 10px 20px;
+    background-color: rgb(234, 195, 20);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 4px rgba(227, 215, 105, 0.4); /* Sombra difuminada */
+   font-weight: bold;
+}
+  
+  .button:hover {
+    background-color: rgb(208, 190, 106);
+  }
+  .button:disabled:hover {
+    background-color:rgb(234, 195, 20);
+
+  }
+
+
+  .button:disabled {
+    /* Estilos para el botón deshabilitado */
+    opacity: 0.6; /* Reducir la opacidad */
+    cursor: not-allowed; /* Cambiar el cursor */
+  }
+   
+  @media (min-width: 500px) {
+    .form {
+      width: 400px;
+    }
+  
+    .form-group {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .form-group label {
+      margin-right: 10px;
+    }
+  }
+  

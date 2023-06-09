@@ -1,0 +1,176 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .cardWrapper {
+    margin: 10px;
+  }
+  
+  
+  .container:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Agrega background-attachment: fixed */
+  
+    filter: brightness(.4);
+    z-index: -1; /* Asegura que el fondo de imagen esté detrás de otros elementos */
+  
+  }
+
+  .container {
+    height: 80px;
+    width: 100vw;
+    background-color: rgb(182, 37, 155 ,0.3);
+    justify-content: flex-start;
+    opacity: "0.7";
+    display:flex;
+    align-items: center;
+    overflow: hidden; /* Agrega esta línea */
+}
+
+.botonStyleHomeFav {
+    justify-content: center;
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    background-color: rgb(228, 116, 17);
+    color:white;
+    border: 'none';
+    border: 4px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: px;
+    font-size: 75%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.3s, font-size 0.3s;
+    box-shadow: 0px 3px 4px rgba(193, 188, 188, 0.2);
+
+    /* cuando acercamos el cursor */
+    &:hover {
+       background-color: #AC9FB5;
+        font-size: 80%;
+    }
+}
+
+
+
+.botonStyle {
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 30px;
+    background-color: rgb(234, 195, 20);
+    color:black;
+    border: 'none';
+    border: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: px;
+    font-size: 90%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.3s, font-size 0.3s;
+    box-shadow: 0px 3px 4px rgba(193, 188, 188, 0.2);
+
+    /* cuando acercamos el cursor */
+    &:hover {
+       background-color: #AC9FB5;
+        font-size: 82%;
+    }
+}
+.botonCloseAll{
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(169, 45, 4);
+    color:white;
+    border: 'none';
+    border: 4px;
+    margin-left: 8px;
+    margin-right: 10px;
+    margin-top: px;
+    font-size: 90%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.3s, font-size 0.3s;
+    box-shadow: 0px 3px 4px rgba(255, 0, 0, 0.2);
+}
+.input{
+    width: 68px;
+    margin-right: 10px;
+    opacity: 0.7;
+    border-radius: 10px;
+    background-color: rgb(235, 225, 182); ;
+}
+
+.title {
+    animation: fadeUp 6s ease-in-out infinite;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    margin-right: 120px;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
+@keyframes fadeUp {
+
+    0% {
+        opacity: -1;
+        transform: translateY(-300px);
+    }
+
+    30% {
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
+
+    35% {
+        opacity: 1;
+        transform: translateY(0px);
+        color: rgb(234, 195, 20);
+    }
+    60% {
+        opacity: .7;
+        transform: translateY(0px);
+     
+    }
+    95% {
+        opacity: -0.5;
+        color:  rgb(234, 195, 20);
+    }
+    
+
+    100% {
+        opacity: -1;
+        transform: translateY(300px);
+        color: rgb(234, 195, 20);
+    }
+
+
+    
+}

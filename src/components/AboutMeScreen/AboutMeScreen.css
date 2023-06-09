@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  color: rgb(203, 219, 219);
+
+}
+
+
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://usagif.com/wp-content/uploads/gif/outerspace-6.gif');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.23);
+  z-index: -2;
+}
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    filter:opacity(80%);
+    filter: saturate(80%);
+    border-radius: 50%;
+    box-shadow: 8px 0px 8px rgba(9, 0, 0, 0.9); /* Sombra difuminada */
+  }
+  
+  .profile-name {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: -4px;
+    margin-top: -4px;
+    text-align: center;
+
+  }
+  
+  .profile-description {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .button {
+    background-color: rgb(234, 195, 20);
+    color:black;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(230, 209, 51, 0.4); /* Sombra difuminada */
+
+  }
+  .button:hover{
+    background-color: rgb(224, 208, 135)
+
+  }
