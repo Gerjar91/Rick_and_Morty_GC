@@ -2,7 +2,9 @@
 const express = require("express")
 const server = express()
 const PORT = 3001;
-const {router} = require("./routes/index")
+const { router } = require("./routes/index")
+const { conn } = require('./DB_connection');
+
 //mildware para correr cors 
 server.use(express.json())
 
@@ -22,7 +24,8 @@ server.use((req, res, next) => {
 
 server.use(`/rickandmorty`, router)
 
-server.listen(PORT, () => {
+server.listen(PORT, async () => {
+   await conn.sync({ force: true })
    console.log('Server raised in port: ' + PORT);
 });
 
